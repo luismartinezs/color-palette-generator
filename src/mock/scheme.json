@@ -1,0 +1,30 @@
+{
+  "scheme": [
+    {
+      "label": "primary",
+      "shades": [
+        {
+          "label": "50",
+          "value": "#ffffff"
+        },
+        {
+          "label": "100",
+          "value": "#ffffff"
+        }
+      ]
+    },
+    {
+      "label": "secondary",
+      "shades": [
+        {
+          "label": "50",
+          "value": "#ffffff"
+        },
+        {
+          "label": "100",
+          "value": "#ffffff"
+        }
+      ]
+    }
+  ]
+}

@@ -2,9 +2,8 @@
   <!-- Use input[type="color"] as it is already built in the browser -->
   <!-- Apply some tailwind classes -->
   <input
-    class="w-8 h-8 rounded shadow cursor-pointer overflow-hidden"
     type="color"
-    :value="color"
+    :value="color.value"
     @change="handleChange"
   />
 </template>
@@ -15,8 +14,8 @@ export default {
   // takes reactive value as a prop
   props: {
     color: {
-      type: String,
-      default: '#000000',
+      type: Object,
+      required: true,
     },
   },
   // emits updates on reactive value

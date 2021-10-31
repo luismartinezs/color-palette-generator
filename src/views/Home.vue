@@ -1,14 +1,14 @@
 <script>
-import ColorGroup from '@/components/ColorGroup.vue'
+import ColorScheme from '@/components/ColorScheme.vue'
 
 export default {
   name: 'Home',
   components: {
-    ColorGroup
+    ColorScheme
   }
 }
 </script>
 
 <template>
-  <ColorGroup />
+  <ColorScheme />
 </template>
