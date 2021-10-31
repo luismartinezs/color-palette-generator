@@ -1,11 +1,11 @@
 <template>
-<div class="">
-  <slot></slot>
-</div>
+  <div class="w-screen h-screen">
+    <slot></slot>
+  </div>
 </template>
 
 <script>
-export default{
-  name: "FullScreen"
+export default {
+  name: 'FullScreen'
 }
 </script>

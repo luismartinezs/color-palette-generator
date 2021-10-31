@@ -1,0 +1,19 @@
+{
+  "editor.tabSize": 2,
+  "editor.tabCompletion": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "soruce.format": true,
+    "source.fixAll.eslint": true
+  },
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modifications",
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "i18n-ally.localesPaths": ["lang", "assets/lang"],
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  }
+}

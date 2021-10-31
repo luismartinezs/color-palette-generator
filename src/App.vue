@@ -1,17 +1,31 @@
 <script>
 import FullScreen from '@/components/FullScreen.vue'
+import DefaultLayout from '@/layouts/DefaultLayout.vue'
+import BackgroundWrapper from './components/BackgroundWrapper.vue'
+import TheHeader from './components/TheHeader.vue'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    FullScreen
+    FullScreen,
+    DefaultLayout,
+    BackgroundWrapper,
+    TheHeader
   }
 }
-
 </script>
 
 <template>
   <FullScreen>
-      <router-view />
-    </FullScreen>
+    <BackgroundWrapper>
+      <DefaultLayout>
+        <template #header>
+          <TheHeader />
+        </template>
+        <template #content>
+          <router-view />
+        </template>
+      </DefaultLayout>
+    </BackgroundWrapper>
+  </FullScreen>
 </template>

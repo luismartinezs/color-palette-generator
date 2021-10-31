@@ -1,15 +1,9 @@
 <script>
-import FullScreen from "@/components/FullScreen.vue"
 export default {
-  name: "Home",
-  components: {
-    FullScreen
-  }
+  name: 'Home'
 }
 </script>
 
 <template>
-  <FullScreen>
-    CONTENT
-  </FullScreen>
+  <div>CONTENT</div>
 </template>
