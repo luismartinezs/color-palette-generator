@@ -1,8 +1,10 @@
 <script>
 import FullScreen from '@/components/FullScreen.vue'
 import DefaultLayout from '@/layouts/DefaultLayout.vue'
-import BackgroundWrapper from './components/BackgroundWrapper.vue'
-import TheHeader from './components/TheHeader.vue'
+import BackgroundWrapper from '@/components/BackgroundWrapper.vue'
+import TheHeader from '@/components/TheHeader.vue'
+import WidthWrapper from '@/components/WidthWrapper.vue'
+import HeightWrapper from './components/HeightWrapper.vue'
 
 export default {
   name: 'App',
@@ -10,7 +12,9 @@ export default {
     FullScreen,
     DefaultLayout,
     BackgroundWrapper,
-    TheHeader
+    TheHeader,
+    WidthWrapper,
+    HeightWrapper
   }
 }
 </script>
@@ -20,10 +24,18 @@ export default {
     <BackgroundWrapper>
       <DefaultLayout>
         <template #header>
-          <TheHeader />
+          <div class="bg-blue-500 h-full">
+            <WidthWrapper>
+              <TheHeader />
+            </WidthWrapper>
+          </div>
         </template>
         <template #content>
-          <router-view />
+          <WidthWrapper>
+            <HeightWrapper>
+              <router-view />
+            </HeightWrapper>
+          </WidthWrapper>
         </template>
       </DefaultLayout>
     </BackgroundWrapper>
