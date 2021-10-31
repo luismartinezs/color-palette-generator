@@ -31,21 +31,40 @@ export default {
         label: 'primary',
         shades: [
           {
-            label: '50',
-            value: '#000000'
+            label: '100',
+            value: '#e6e6e6'
           },
           {
-            label: '100',
-            value: '#ffffff'
-          }
-        ]
-      },
-      {
-        label: 'secondary',
-        shades: [
+            label: '200',
+            value: '#cccccc'
+          },
           {
-            label: '50',
-            value: '#ffffff'
+            label: '300',
+            value: '#b3b3b3'
+          },
+          {
+            label: '400',
+            value: '#999999'
+          },
+          {
+            label: '500',
+            value: '#808080'
+          },
+          {
+            label: '600',
+            value: '#666666'
+          },
+          {
+            label: '700',
+            value: '#4d4d4d'
+          },
+          {
+            label: '800',
+            value: '#333333'
+          },
+          {
+            label: '900',
+            value: '#1a1a1a'
           }
         ]
       }
