@@ -4,7 +4,7 @@
   <input
     class="w-8 h-8 rounded shadow cursor-pointer overflow-hidden"
     type="color"
-    :value="modelValue"
+    :value="color"
     @change="handleChange"
   />
 </template>
@@ -14,19 +14,19 @@ export default {
   name: 'ColorInput',
   // takes reactive value as a prop
   props: {
-    modelValue: {
+    color: {
       type: String,
       default: '#000000',
     },
   },
   // emits updates on reactive value
-  emits: ['update:modelValue'],
+  emits: ['update:color'],
   setup(_, { emit }) {
     // input event will trigger every time we click on the color picker
     // change event will only trigger when we close the color picker in any way (when the input loses focus)
     const handleChange = (event) => {
       // New color in hex format is emitted
-      emit('update:modelValue', event.target.value)
+      emit('update:color', event.target.value)
     }
 
     return {
