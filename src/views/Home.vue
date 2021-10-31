@@ -1,22 +1,14 @@
 <script>
-import { ref } from 'vue'
-import ColorInput from '@/components/ColorInput.vue'
+import ColorGroup from '@/components/ColorGroup.vue'
 
 export default {
   name: 'Home',
   components: {
-    ColorInput
-  },
-  setup() {
-    const color = ref('#000000')
-
-    return { color }
+    ColorGroup
   }
 }
 </script>
 
 <template>
-  <div>
-    <ColorInput v-model:color="color" />
-  </div>
+  <ColorGroup />
 </template>
