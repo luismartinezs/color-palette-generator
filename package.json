@@ -22,6 +22,6 @@
     "autoprefixer": "^10.3.6",
     "prettier": "2.4.1",
     "tailwindcss": "^2.2.16",
-    "vite": "^2.6.1"
+    "vite": "^2.9.14"
   }
 }
