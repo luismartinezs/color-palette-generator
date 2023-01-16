@@ -20,7 +20,7 @@
     "@types/tailwindcss": "^2.2.1",
     "@vitejs/plugin-vue": "^1.9.2",
     "autoprefixer": "^10.3.6",
-    "prettier": "2.4.1",
+    "prettier": "2.8.3",
     "tailwindcss": "^2.2.16",
     "vite": "^2.6.1"
   }
